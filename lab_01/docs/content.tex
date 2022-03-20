@@ -114,29 +114,43 @@
 
 \section{Текст программы}
 
-\lstinputlisting[style=mstyle]{../main.m}
+\lstinputlisting[style=mstyle]{../main_my.m}
 
-\section{Результаты расчётов}
-
+\section{Результаты расчетов}
 \begin{equation*}
-    M_{\min} = -4,33 \\
+    M_{\min} = 4.39;  M_{\max} = 9.89 \\
 \end{equation*}
 \begin{equation*}
-    M_{\max} = 0,01 \\
+    R = 5.5 \\
 \end{equation*}
 \begin{equation*}
-    R = 4,34 \\
+    \hat\mu(\vec x_n) = 6.9445; S^2(\vec x_n) = 1.171956 \\
 \end{equation*}
 \begin{equation*}
-    \hat\mu(\vec x_n) = 2,0585 \\
-\end{equation*}
-\begin{equation*}
-    S^2(\vec x_n) = 0,994 \\
-\end{equation*}
-\begin{equation*}
-    m = 8
+    m = 8, \Delta = 0.6875
 \end{equation*}
 
-\imgw{130mm}{f1}{Гистограмма и график функции плотности распределения вероятностей нормальной случайной величины с выборочными мат. ожиданием и дисперсией}
 
-\imgw{130mm}{f2}{График эмперической функции распределения и функции распределения нормальной случайной величины с выборочными мат. ожиданием и дисперсией}
+
+
+
+\captionsetup{justification=raggedleft,singlelinecheck=off}
+\begin{table}[h!]
+\centering
+\caption{Интервальный статистический ряд}
+\label{tabular:example}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\begin{tabular}[c]{@{}l@{}}J1 = \\ {[}4.39; \\ 5.0775)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J2 = \\ {[}5.0775; \\ 5.765)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J3 = \\ {[}5.765; \\ 6.4525)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J4 = \\ {[}6.4525; \\ 7.14)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J5 = \\ {[}7.14; \\ 7.8275)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J6 = \\ {[}7.8275; \\ 8.515)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J7 = \\ {[}8.515; \\ 9.2025)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J8 = \\ {[}9.2025; \\ 9.89{]}\end{tabular} \\ \hline
+5                                                                   & 12                                                                   & 19                                                                   & 38                                                                  & 24                                                                  & 10                                                                   & 10                                                                   & 2                                                                     \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\captionsetup{justification=centered}
+\imgw{130mm}{f1}{Гистограмма (синим) и график функции плотности распределения вероятностей нормальной случайной величины с выборочными математическим ожиданием $\hat\mu$ и дисперсией $S^2$ (красным)}
+
+\imgw{130mm}{f2}{График эмпирической функции распределения (зеленым) и функции распределения нормальной случайной величины с выборочными математическим ожиданием  $\hat\mu$ и дисперсией $S^2$ (красным)}
