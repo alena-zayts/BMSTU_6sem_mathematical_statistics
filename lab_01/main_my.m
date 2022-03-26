@@ -67,6 +67,8 @@ x_array = (M_min - 1):(sigma / 100):(M_max + 1);
 f = normpdf(x_array, mu, sigma);
 plot(x_array, f, 'r', 'LineWidth', 2);
 grid on;
+xlabel('x');
+ylabel('fn(x)');
 
 
 fprintf('\ne)\n');
@@ -82,6 +84,8 @@ stairs(z_array, nt_array, 'b');
 F = normcdf(x_array, mu, sigma); 
 plot(x_array, F, 'r');
 grid on;
+xlabel('x');
+ylabel('Fn(x)');
 
 function [ni] = count_ni(i, a, b, X)
     tolerance = 1e-4;
