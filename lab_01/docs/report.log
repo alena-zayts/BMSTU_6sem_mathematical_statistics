@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  26 MAR 2022 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  27 MAR 2022 00:09
 entering extended mode
 **./report.tex
 (report.tex
@@ -1376,9 +1376,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: f1.png Graphic file (type png)
 <use f1.png>
 Package pdftex.def Info: f1.png  used on input line 182.
-(pdftex.def)             Requested size: 540.60236pt x 405.4536pt.
+(pdftex.def)             Requested size: 512.1496pt x 384.10986pt.
 
-Overfull \hbox (54.34474pt too wide) in paragraph at lines 182--182
+Overfull \hbox (25.89198pt too wide) in paragraph at lines 182--182
  [][] 
  []
 
@@ -1389,9 +1389,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: f2.png Graphic file (type png)
 <use f2.png>
 Package pdftex.def Info: f2.png  used on input line 184.
-(pdftex.def)             Requested size: 540.60236pt x 405.4536pt.
+(pdftex.def)             Requested size: 512.1496pt x 384.10986pt.
 
-Overfull \hbox (54.34474pt too wide) in paragraph at lines 184--184
+Overfull \hbox (25.89198pt too wide) in paragraph at lines 184--184
  [][] 
  []
 
@@ -1404,9 +1404,9 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: B520E000FD0D0C923C7A5AD113FB0F63;2031.
  ) 
 Here is how much of TeX's memory you used:
- 38450 strings out of 478864
- 877856 string characters out of 2858518
- 1617706 words of memory out of 10000000
+ 38454 strings out of 478864
+ 877920 string characters out of 2858518
+ 1617704 words of memory out of 10000000
  55526 multiletter control sequences out of 15000+600000
  420693 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1427,9 +1427,9 @@ es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on report.pdf (11 pages, 333398 bytes).
+Output written on report.pdf (11 pages, 337941 bytes).
 PDF statistics:
- 691 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
  112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
