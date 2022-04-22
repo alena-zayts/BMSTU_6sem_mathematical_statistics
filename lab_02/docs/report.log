@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  22 APR 2022 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  22 APR 2022 22:18
 entering extended mode
 **./report.tex
 (report.tex
@@ -1209,7 +1209,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<b_logo.jpg, id=39, 57.816pt x 65.3715pt>
+<b_logo.jpg, id=35, 57.816pt x 65.3715pt>
 File: b_logo.jpg Graphic file (type jpg)
 <use b_logo.jpg>
 Package pdftex.def Info: b_logo.jpg  used on input line 5.
@@ -1331,69 +1331,119 @@ l.9 \include{content}
 
  (content.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+
+Overfull \hbox (18.6841pt too wide) in paragraph at lines 8--9
+[]\T2A/cmr/m/n/14.4 вычисление ниж-ней и верх-ней гра-ниц $[]\OT1/cmr/m/n/14.4 
+([])$\T2A/cmr/m/n/14.4 , $[]\OT1/cmr/m/n/14.4 ([])$ \T2A/cmr/m/n/14.4 для $\OML
+/cmm/m/it/14.4 $\T2A/cmr/m/n/14.4 -доверительного
+ []
+
+
+Overfull \hbox (29.7791pt too wide) in paragraph at lines 9--10
+[]\T2A/cmr/m/n/14.4 вычисление ниж-ней и верх-ней гра-ниц $[][]\OT1/cmr/m/n/14.
+4 ([])$\T2A/cmr/m/n/14.4 , $[][]\OT1/cmr/m/n/14.4 ([])$ \T2A/cmr/m/n/14.4 для $
+\OML/cmm/m/it/14.4 $\T2A/cmr/m/n/14.4 -доверительного
+ []
+
+
+Overfull \hbox (9.891pt too wide) in paragraph at lines 15--16
+[]\T2A/cmr/m/n/14.4 на дру-гой ко-ор-ди-нат-ной плос-ко-сти $\OML/cmm/m/it/14.4
+ Ozn$ \T2A/cmr/m/n/14.4 по-стро-ить пря-мую $\OML/cmm/m/it/14.4 z \OT1/cmr/m/n/
+14.4 = \OML/cmm/m/it/14.4 S[]\OT1/cmr/m/n/14.4 ([])$\T2A/cmr/m/n/14.4 ,
+ []
+
 [2
 
 
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+
+Overfull \hbox (22.42139pt too wide) in paragraph at lines 29--29
+ \T2A/cmr/bx/n/20.74 для зна-че-ния па-ра-мет-ра рас-пре-де-ле-ния слу-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Overfull \hbox (6.92377pt too wide) in paragraph at lines 42--42
+ \T2A/cmr/bx/n/20.74 ти-че-ско-го ожи-да-ния и дис-пер-сии нор-маль-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
+
 [3
 
-] [4] [5]
+] [4]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-149.
+72.
 
 (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-(../main_my.m [6
+(../main_my.m [5
 
-] [7])
+] [6]) [7]
+<p1.png, id=208, 1124.2pt x 843.15pt>
+File: p1.png Graphic file (type png)
+<use p1.png>
+Package pdftex.def Info: p1.png  used on input line 102.
+(pdftex.def)             Requested size: 562.09863pt x 421.57396pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<f1.png, id=206, 1124.2pt x 843.15pt>
-File: f1.png Graphic file (type png)
-<use f1.png>
-Package pdftex.def Info: f1.png  used on input line 182.
-(pdftex.def)             Requested size: 512.1496pt x 384.10986pt.
-
-Overfull \hbox (25.89198pt too wide) in paragraph at lines 182--182
+Overfull \hbox (75.84102pt too wide) in paragraph at lines 102--103
  [][] 
  []
 
+<p2.png, id=209, 1124.2pt x 843.15pt>
+File: p2.png Graphic file (type png)
+<use p2.png>
+Package pdftex.def Info: p2.png  used on input line 109.
+(pdftex.def)             Requested size: 562.09863pt x 421.57396pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<f2.png, id=207, 1124.2pt x 843.15pt>
-File: f2.png Graphic file (type png)
-<use f2.png>
-Package pdftex.def Info: f2.png  used on input line 184.
-(pdftex.def)             Requested size: 512.1496pt x 384.10986pt.
-
-Overfull \hbox (25.89198pt too wide) in paragraph at lines 184--184
+Overfull \hbox (75.84102pt too wide) in paragraph at lines 109--110
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [8] [9 <./f1.png (PNG copy)>] [10 <./f2.png (PNG copy)>] (report.aux
-(00-title.aux) (content.aux))
+) [8 <./p1.png (PNG copy)>] [9 <./p2.png (PNG copy)>] (report.aux (00-title.aux
+) (content.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 83A0C1BAE479C22505C68DE28F895096;2095.
+(rerunfilecheck)             Checksum: 2BC56808517FF56AB908EFA5518F57A3;2808.
  ) 
 Here is how much of TeX's memory you used:
- 38454 strings out of 478864
- 877920 string characters out of 2858518
- 1617706 words of memory out of 10000000
- 55526 multiletter control sequences out of 15000+600000
- 420693 words of font info for 69 fonts, out of 8000000 for 9000
+ 38428 strings out of 478864
+ 877740 string characters out of 2858518
+ 1591687 words of memory out of 10000000
+ 55514 multiletter control sequences out of 15000+600000
+ 422239 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,14n,102p,762b,1855s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,7n,102p,1117b,1838s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt10
 00.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 rm0600.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
@@ -1403,16 +1453,16 @@ pi600\labx1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
 lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour
 /lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/lj
 four/lh/lh-t2a/dpi600\labx1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on report.pdf (11 pages, 338046 bytes).
+msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb>
+Output written on report.pdf (10 pages, 333035 bytes).
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 643 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

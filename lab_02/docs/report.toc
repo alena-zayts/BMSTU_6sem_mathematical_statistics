@@ -1,9 +1,8 @@
 \babel@toc {russian}{}
 \contentsline {chapter}{\numberline {1}Задание}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Теоретические сведения}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Формулы для вычисления величин}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Определение эмпирической плотности и гистограммы}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Определение эмпирической функции распределения}{5}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Результаты работы}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Текст программы}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Результаты работы программы}{8}{section.3.2}%
+\contentsline {section}{\numberline {2.1}Определение $\gamma $-доверительного интервала для значения параметра распределения случайной величины}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Формулы для вычисления границ \\ $\gamma $-доверительного интервала для математического ожидания и дисперсии нормальной случайной величины.}{3}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Результаты работы}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Текст программы}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Результаты работы программы}{7}{section.3.2}%

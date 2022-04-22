@@ -2,17 +2,20 @@
 
 
 \begin{enumerate}
-\item Для выборки объёма $n$ из генеральной совокупности $X$ реализовать в виде программы на ЭВМ
-\begin{enumerate}
-            \item вычисление максимального значения $M_{\max}$ и минимального значения $M_{\min}$;
-            \item размаха $R$ выборки;
-            \item вычисление оценок $\hat\mu$ и $S^2$ математического ожидания $MX$ и дисперсии $DX$;
-            \item группировку значений выборки в $m = [\log_2 n] + 2$ интервала;
-            \item построение на одной координатной плоскости гистограммы и графика функции плотности распределения вероятностей нормальной случайной величины с математическим ожиданием $\hat{\mu}$ и дисперсией $S^2$;
-            \item построение на другой координатной плоскости графика эмпирической функции распределения и функции распределения нормальной случайной величины с математическим ожиданием $\hat{\mu}$ и дисперсией $S^2$.
+	\item Для выборки объема $n$ из нормальной генеральной совокупности $X$ реализовать в виде программы на ЭВМ
+	\begin{enumerate}
+		\item вычисление точечных оценок $\hat\mu(\vec x_n)$ и $S^2(\vec x_n)$ математического ожидания $MX$ и дисперсии $DX$ соответственно;
+		\item вычисление нижней и верхней границ $\underline\mu(\vec x_n)$, $\overline\mu(\vec x_n)$ для $\gamma$-доверительного интервала для математического ожидания $MX$;
+		\item вычисление нижней и верхней границ $\underline\sigma^2(\vec x_n)$, $\overline\sigma^2(\vec x_n)$ для $\gamma$-доверительного интервала для дисперсии $DX$;
+	\end{enumerate}
+	\item вычислить $\hat\mu$ и $S^2$ для выборки из индивидуального варианта;
+	\item для заданного пользователем уровня доверия $\gamma$ и $N$ – объема выборки из индивидуального варианта:
+	\begin{enumerate}
+		\item на координатной плоскости $Oyn$ построить прямую $y = \hat\mu(\vec{x_N})$, также графики функций $y = \hat\mu(\vec x_n)$, $y = \underline\mu(\vec x_n)$ и $y = \overline\mu(\vec x_n)$ как функций объема $n$ выборки, где $n$ изменяется от 1 до $N$;
+		\item на другой координатной плоскости $Ozn$ построить прямую $z = S^2(\vec{x_N})$, также графики функций $z = S^2(\vec x_n)$, $z = \underline\sigma^2(\vec x_n)$ и $z = \overline\sigma^2(\vec x_n)$ как функций объема $n$ выборки, где $n$ изменяется от 1 до $N$.
+	\end{enumerate}
 \end{enumerate}
-\item Провести вычисления и построить графики для выборки из индивидуального варианта.
-\end{enumerate}
+
 
 
 %\textbf{Выборка индивидуального варианта №8:}
@@ -23,122 +26,42 @@
 
 \chapter{Теоретические сведения}
 
-\section{Формулы для вычисления величин}
+\section{Определение $\gamma$-доверительного интервала для значения параметра распределения случайной величины}
 
-Пусть дана случайная выборка $\vec X = (X_1, ..., X_n)$ объема n из генеральной совокупности X;  $(X_{(1)}, ..., X_{(n)})$ -- вариационный ряд, отвечающий этой выборке.
-
-Минимальное и максимальное значения выборки находятся по формулам (\ref {eq:e1}) и (\ref {eq:e2}), соответственно:
-
-\begin{equation}
-    \begin{aligned}
-        M_{\min} = X_{(1)},
-    \end{aligned}
-	\label{eq:e1}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		M_{\max} = X_{(n)}.
-	\end{aligned}
-	\label{eq:e2}
-\end{equation}
-
-Размах выборки находится по формуле (\ref {eq:e3}):
-\begin{equation}
-    R = M_{\max} - M_{\min}.
-    \label{eq:e3}
-\end{equation}
-
-
-Выборочное среднее и исправленная выборочная дисперсия находятся по формулам (\ref {eq:e4}) и (\ref {eq:e5}), соответственно:
-
-\begin{equation}
-	\begin{aligned}
-		\hat\mu(\vec X) = \overline X = \frac 1n \sum_{i=1}^n X_i,
-	\end{aligned}
-	\label{eq:e4}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-		S^2(\vec X) &= \frac 1{n-1} \sum_{i=1}^n (X_i-\overline X)^2.
-	\end{aligned}
-	\label{eq:e5}
-\end{equation}
-
-
-\section{Определение эмпирической плотности и гистограммы}
-
-Пусть $\vec x=(x_1, ..., x_n)$ -- выборка из генеральной совокупности $X$; вектор $(x_{(1)}, ..., x_{(n)})$ -- вариационный ряд, построенный по этой выборке.  Если объем $n$ выборки велик, то значения $x_i$ группируют в так называемый интервальный статистический ряд. Для этого отрезок $J = [x_{(1)}; x_{(n)}]$ разбивают на $m$ равновеликих промежутков:
-
-\begin{equation*}
-    J_i = [x_{(1)} + (i - 1) \cdot \Delta; x_{(1)} + i \cdot \Delta), i = \overline{1; m - 1},
-\end{equation*}
-
-\begin{equation*}
-    J_{m} = [x_{(1)} + (m - 1) \cdot \Delta; x_{(n)}],
-\end{equation*}
-где $\Delta$ -- ширина каждого из них:
-\begin{equation*}
-    \Delta = \frac{|J|}{m} = \frac{x_{(n)} - x_{(1)}}{m}.
-\end{equation*}
+Пусть X -- случайная величина, закон распределения которой известен с точностью до неизвестного параметра $\theta$. 
 
 \textbf{Определение.}
 
-Интервальным статистическим рядом, отвечающим выборке $\vec x$ называют таблицу вида
-
-\begin{table}[htb]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        $J_1$ & ... & $J_i$ & ... & $J_m$ \\
-        \hline
-        $n_1$ & ... & $n_i$ & ... & $n_m$ \\
-        \hline
-    \end{tabular}
-\end{table}где $n_i$ -- количество элементов выборки $\vec x$, попавших в  промежуток $J_i$.
-\\
-Для выбора m используют формулу
-\begin{equation*}
-	m=[\log_2n]+2
-\end{equation*}
-или
-\begin{equation*}
-	m=[\log_2n]+1.
-\end{equation*}
-
-
-Пусть для данной выборки $\vec x$ построен интервальный статистический ряд $(J_i, n_i), i = \overline{1; m}$.
-
-\textbf{Определение.}
-
-Эмпирической функцией плотности распределения, соответсвующей выборке $\vec x$ объема n, называют функцию
-\begin{equation*}
-    f_n(x) =
-    \begin{cases}
-        \frac{n_i}{n \Delta}, \text{если} x \in J_i, i = \overline{1; m}, \\
-        0, \text{иначе.} \\
-    \end{cases}
-\end{equation*}
+Интервальной оценкой параметра $\theta$ уровня $\gamma$ ($\gamma$-интервальной оценкой) называют пару статистик $\underline{\theta}(\vec X) \text{ и } \overline{\theta}(\vec X)$ таких, что $$P\{\theta \in (\underline{\theta}(\vec X), \overline{\theta}(\vec X))\}=\gamma$$ 
 
 
 \textbf{Определение.}
+$\gamma$-доверительным интервалом (доверительным интервалом уровня $\gamma$) для параметра $\theta$ называют реализацию (выборочное значение) интервальной оценки уровня $\gamma$ для этого параметра, то есть интервал $(\underline{\theta}(\vec x), \overline{\theta}(\vec x))$ с детерминированными границами.
 
-График эмпирической функции плотности называют гистограммой.
 
+\section{Формулы для вычисления границ \\ $\gamma$-доверительного интервала для математического ожидания и дисперсии нормальной случайной величины.}
 
-\section{Определение эмпирической функции распределения}
+Формулы для вычисления границ $\gamma$-доверительного интервала для математического ожидания нормальной случайной величины:
 
-Пусть $\vec x = (x_1, ..., x_n)$ -- выборка из генеральной совокупности $X$. Обозначим $n(t, \vec x)$ число компонент вектора $\vec x$, которые меньше, чем $t$.
+$$
+\underline\mu(\vec X_n)=\overline X - \frac{S(\vec X)t^{(n-1)}_{\frac{1+\gamma}{2}}}{\sqrt{n}},
+$$
 
-\textbf{Определение.}
+$$
+\overline\mu(\vec X_n)=\overline X + \frac{S(\vec X)t^{(n-1)}_{\frac{1+\gamma}{2}}}{\sqrt{n}},
+$$
+где $\overline X$ -- выборочное среднее, $S^2(\vec X)$ -- исправленная выборочная дисперсия, $n$ -- объем выборки, $\gamma$ -- уровень доверия, $t^{(n-1)}_{\frac{1+\gamma}{2}}$ -- квантиль уровня $\frac{1+\gamma}{2}$ распределения Стьюдента с n-1 степенью свободы.
 
-Эмпирической функцией распределения, построенной по выборке $\vec x$, называют функцию $F_n: \mathbb{R} \to \mathbb{R}$, определенную правилом: 
+Формулы для вычисления границ $\gamma$-доверительного интервала для дисперсии нормальной случайной величины:
 
-\begin{equation*}
-    F_n(t) = \frac{n(t, \vec x)}{n}.
-\end{equation*}
+$$
+\underline\sigma^2(\vec X_n)= \frac{(n-1)S^2(\vec X)}{h^{(n-1)}_{\frac{1+\gamma}{2}}},
+$$
 
+$$
+\overline\sigma^2(\vec X_n)= \frac{(n-1)S^2(\vec X)}{h^{(n-1)}_{\frac{1-\gamma}{2}}},
+$$
+где $S^2(\vec X)$ -- исправленная выборочная дисперсия, $n$ -- объем выборки, $\gamma$ -- уровень доверия, $h^{(n-1)}_{\alpha}$ -- квантиль уровня $\alpha$ распределения $\chi^2$ с n - 1 степенью свободы.
 
 
 \chapter{Результаты работы}
@@ -149,36 +72,40 @@
 \lstinputlisting[style=mstyle]{../main_my.m}
 
 \section{Результаты работы программы}
+
+
 \begin{equation*}
-    (a) M_{\min} = 4.39;  M_{\max} = 9.89 \\
+	\hat\mu(\vec x_n) = 6.944500\\
 \end{equation*}
 \begin{equation*}
-    (b) R = 5.5 \\
+	S^2(\vec x_n) = 1.171956\\
 \end{equation*}
 \begin{equation*}
-    (c) \hat\mu(\vec x_n) = 6.9445; S^2(\vec x_n) = 1.171956 \\
+	\underline\mu(\vec x_n) = 6.780673\\
 \end{equation*}
 \begin{equation*}
-    (d) m = 8, \Delta = 0.6875
+	\overline\mu(\vec x_n) = 7.108327 \\
+\end{equation*}
+\begin{equation*}
+	\underline{S^2}(\vec x_n) = 0.958766\\
+\end{equation*}
+\begin{equation*}
+	\overline{S^2}(\vec x_n) = 1.470952\\
 \end{equation*}
 
 
 
+\newpage
+
+\begin{figure}[ht!]	
+	\centering{
+		\includegraphics[scale=0.5]{p1.png}
+		\caption{Прямая $y = \hat\mu(\vec x_N)$, а также графики функций  $y(n) = \hat\mu(\vec x_n)$, $y(n) = \underline\mu(\vec x_n)$, $y(n) = \overline\mu(\vec x_n)$ как функций объема $n$ выборки, где $n$ изменяется от 1 до $N$}}
+\end{figure}
 
 
-\captionsetup{justification=raggedleft,singlelinecheck=off}
-\begin{table}[h!]
-\centering
-\caption{Интервальный статистический ряд}
-\label{tabular:example}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\begin{tabular}[c]{@{}l@{}}J1 = \\ {[}4.39; \\ 5.0775)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J2 = \\ {[}5.0775; \\ 5.765)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J3 = \\ {[}5.765; \\ 6.4525)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J4 = \\ {[}6.4525; \\ 7.14)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J5 = \\ {[}7.14; \\ 7.8275)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J6 = \\ {[}7.8275; \\ 8.515)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J7 = \\ {[}8.515; \\ 9.2025)\end{tabular} & \begin{tabular}[c]{@{}l@{}}J8 = \\ {[}9.2025; \\ 9.89{]}\end{tabular} \\ \hline
-5                                                                   & 12                                                                   & 19                                                                   & 37                                                                  & 25                                                                  & 10                                                                   & 10                                                                   & 2                                                                     \\ \hline
-\end{tabular}
-\end{table}
-
-\captionsetup{justification=centering}
-\imgw{180mm}{f1}{Гистограмма (синим) и график функции плотности распределения вероятностей нормальной случайной величины с математическим ожиданием $\hat\mu$ и дисперсией $S^2$ (красным)}
-
-\imgw{180mm}{f2}{График эмпирической функции распределения (синим) и функции распределения нормальной случайной величины с математическим ожиданием  $\hat\mu$ и дисперсией $S^2$ (красным)}
+\begin{figure}[ht!]	
+	\centering{
+		\includegraphics[scale=0.5]{p2.png}
+		\caption{Прямая $z = S^2(\vec x_N)$, а также графики функций $z(n) = S^2(\vec x_n)$, $z(n) = \underline \sigma^2(\vec x_n)$, $z(n) = \overline \sigma^2(\vec x_n)$ как функций объема $n$ выборки, где $n$ изменяется от 1 до $N$}}
+\end{figure}
